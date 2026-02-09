@@ -98,29 +98,38 @@
 
         layer_1 {
             bindings = <
-                &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp N6     &kp N7  &kp N8    &kp N9     &kp N0
-                &trans  &trans  &trans    &trans  &trans       &kp LEFT   &kp UP  &kp DOWN  &kp RIGHT  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans    &trans  &trans       &trans     &trans  &trans    &trans     &trans  &kp LCTRL
-                                &kp BSPC  &trans  &kp SPACE    &kp ENTER  &trans  &kp ESC
+                &kp N1             &kp N2     &kp N3    &kp N4  &kp N5       &kp N6     &kp N7     &kp N8    &kp N9     &kp N0
+                &kp DOUBLE_QUOTES  &kp GRAVE  &none     &none   &none        &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &kp BSLH
+&kp LEFT_SHIFT  &kp SINGLE_QUOTE   &none      &none     &none   &none        &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp TILDE  &kp LCTRL
+                                              &kp BSPC  &none   &kp SPACE    &kp ENTER  &none      &kp ESC
             >;
         };
 
         layer_2 {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
         };
 
         layer_3 {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        layer3 {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
