@@ -101,7 +101,7 @@
                 &kp N1             &kp N2                &kp N3                 &kp N4         &kp N5              &kp N6     &kp N7     &kp N8    &kp N9     &kp N0
                 &kp DOUBLE_QUOTES  &kp GRAVE             &none                  &none          &none               &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &kp BSLH
 &kp LEFT_SHIFT  &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN    &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp TILDE  &kp LCTRL
-                                                         &kp BSPC               &none          &kp SPACE           &kp ENTER  &kp TAB    &kp ESC
+                                                         &none                  &none          &none               &none      &kp TAB    &none
             >;
         };
 
@@ -110,7 +110,7 @@
                  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)
                  &kp LG(A)         &kp LG(S)         &kp LG(D)         &kp LG(F)         &kp LG(G)           &kp LG(H)   &kp LG(J)   &kp LG(K)   &kp LG(L)   &none
 &kp PRINTSCREEN  &none             &kp LG(X)         &kp LG(C)         &kp LG(V)         &kp LG(B)           &kp LG(N)   &kp LG(M)   &none       &none       &none       &none
-                                                     &kp LSHIFT        &kp LALT          &none               &none       &none       &none
+                                                     &none             &kp LSHIFT        &kp LALT            &none       &none       &none
             >;
         };
     };
